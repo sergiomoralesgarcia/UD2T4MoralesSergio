@@ -14,5 +14,17 @@ namespace UD2T4MoralesSergio
 {
     internal class Triangulo: Figura
     {
+        float base1;
+        float altura;
+
+        public override float Perimetro()
+        {
+            return base1 + base1 + base1;
+        }
+
+        public override float Area()
+        {
+            return (base1 * altura) / 2;
+        }
     }
 }

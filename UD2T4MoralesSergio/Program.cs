@@ -38,13 +38,13 @@ namespace UD2T4MoralesSergio
                             acabar = true;
                             break;
                         case 1:
-                            
+                            Rectangulo();
                             break;
                         case 2:
-                            
+                            Circulo();
                             break;
                         case 3:
-                            
+                            Triangulo();
                             break;
                         default:
 
@@ -57,6 +57,51 @@ namespace UD2T4MoralesSergio
                 }
             }
 
+        }
+        private static void Rectangulo()
+        {
+            try
+            {
+                Console.WriteLine("Vamos a calcular el perímetro y el área del rectángulo.");
+                Console.WriteLine("Introduzca la base:");
+                float lado1 = float.Parse(Console.ReadLine());
+                Console.WriteLine("Introduzca la altura:");
+                float lado2 = float.Parse(Console.ReadLine());
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Dato mal introducido");
+            }
+        }
+
+        private static void Circulo()
+        {
+            try
+            {
+                Console.WriteLine("Vamos a calcular el perímetro y el área del círculo.");
+                Console.WriteLine("Introduzca el radio:");
+                float radio = float.Parse(Console.ReadLine());
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Dato mal introducido");
+            }
+        }
+
+        private static void Triangulo()
+        {
+            try
+            {
+                Console.WriteLine("Vamos a calcular el perímetro y el área del triángulo.");
+                Console.WriteLine("Introduzca la base:");
+                float base1 = float.Parse(Console.ReadLine());
+                Console.WriteLine("Introduzca la altura:");
+                float altura = float.Parse(Console.ReadLine());
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Dato mal introducido");
+            }
         }
     }
 }

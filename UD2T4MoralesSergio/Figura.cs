@@ -7,6 +7,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,12 +16,19 @@ namespace UD2T4MoralesSergio
 {
     internal class Figura
     {
-        private float base;
-        private float altura;
+        float lado1;
+        float lado2;
+        float radio;
+        float base1;
+        float altura;
 
-        void captura();
-
-        public virtual float Perimetro()=0;
-        public virtual float Area()=0;
+        public virtual float Perimetro()
+        {
+            return x; 
+        }
+        public virtual float Area()
+        {
+            return y; 
+        }
     }
 }

@@ -14,14 +14,16 @@ namespace UD2T4MoralesSergio
 {
     internal class Ractangulo: Figura
     {
+        float lado1;
+        float lado2;
         public override float Perimetro()
         {
-            return altura * base;
+            return lado1 + lado1 + lado2 + lado2;
         }
 
-        public override float Area(float a, float b)
+        public override float Area()
         {
-            return a * b;
+            return lado1 * lado2;
         }
     }
 }

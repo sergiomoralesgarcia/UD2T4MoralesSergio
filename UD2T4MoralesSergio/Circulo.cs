@@ -14,12 +14,13 @@ namespace UD2T4MoralesSergio
 {
     internal class Circulo: Figura
     {
-        public override float Perimetro(float r)
+        float
+        public override float Perimetro(float radio)
         {
-            return ;
+            return Math.PI() * (radio * radio);
         }
 
-        public override float Area(float r)
+        public override float Area(float radio)
         {
             return Math.PI() * (r * r)   ;
         }
