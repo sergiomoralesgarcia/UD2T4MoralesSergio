@@ -12,41 +12,41 @@ using System.Threading.Tasks;
 
 namespace UD2T4MoralesSergio
 {
-
     /// <summary>
-    /// Clase círculo
+    /// Clase rectángulo
     /// </summary>
-    internal class Circulo: Figura
+    internal class Rectangulo: Figura
     {
+        // Declaración de las variables del rectángulo
+        private float lado1;
+        private float lado2;
 
-        // Declaración de las variables del círculo
-        float radio;
-
-        public Circulo (float radio)
+        public Rectangulo(float lado1, float lado2)
         {
-            this.radio = radio;
+            this.lado1 = lado1;
+            this.lado2 = lado2;
         }
 
         /// <summary>
-        /// Perímetro del círculo
+        /// Perímetro del rectángulo
         /// </summary>
         /// <returns>
-        /// Devuelve el resultado de la multiplicación del radio del círculo y el número pi y 2.
+        /// Devuelve la suma de los cuatro lados del rectángulo
         /// </returns>
         public override float Perimetro()
         {
-            return 2 * (float)Math.PI * radio;
+            return lado1 + lado1 + lado2 + lado2;
         }
 
         /// <summary>
         /// Área del rectángulo
         /// </summary>
         /// <returns>
-        /// Devuelve el resultado de la multiplicación del diámetro del círculo y el número pi
+        /// Devuelve el resultado de la multiplicación de los dos lados distintos del rectángulo
         /// </returns>
         public override float Area()
         {
-            return (float)Math.PI * (radio * radio);
+            return lado1 * lado2;
         }
     }
 }

@@ -14,21 +14,22 @@ using System.Threading.Tasks;
 
 namespace UD2T4MoralesSergio
 {
+
+    /// <summary>
+    /// Clase figura que actua como padre 
+    /// </summary>
     internal class Figura
     {
-        float lado1;
-        float lado2;
-        float radio;
-        float base1;
-        float altura;
-
+        // Método del perímetro 
         public virtual float Perimetro()
         {
-            return x; 
+            return 0; 
         }
+
+        // Método del área
         public virtual float Area()
         {
-            return y; 
+            return 0; 
         }
     }
 }
